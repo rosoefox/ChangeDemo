@@ -1,23 +1,13 @@
-<!-- ParentComponent.vue -->
 <template>
   <div>
     <ChildComponent1 />
   </div>
 </template>
 
-<script>
-
+<script setup>
+import { provide, ref } from 'vue';
 import ChildComponent1 from "@/components/example4/ChildComponent1.vue";
 
-export default {
-  name: "E06ParentComponent",
-  provide() {
-    return {
-      sharedMessage: 'Hello from provide'
-    };
-  },
-  components: {
-    ChildComponent1
-  }
-};
+const sharedMessage = ref('Hello from provide');
+provide('sharedMessage', sharedMessage);
 </script>
