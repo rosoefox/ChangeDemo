@@ -51,6 +51,10 @@ methods: { fn() { ... } }를 const fn = () => { ... }로 대체.
 watch: { ... }를 watch(변수, (new, old) => { ... })로 대체.  
 created, mounted, updated.. 등을 on이 붙은 함수로 대체.  
 실행 화면 :  이름과 성을 입력하고 Greet을 누르면 Greeting count가 올라가고, 3회부터는 아래의 문자열이 변경된다.
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/36d74c95-b347-4218-a342-8d8ac16f269f" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/36d74c95-b347-4218-a342-8d8ac16f269f" />  
 
+< E08 >  
+변경 요약 : vue3 스타일이므로 변경하지 않았다.  
+실행 화면 : E07과 동일하다.  
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4889f461-30c0-4a98-9924-b12f47a3a39b" />
 
