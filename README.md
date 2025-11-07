@@ -1,7 +1,7 @@
 < E01 >  
 변경 요약 : <script>와 export default {}를 <script setup> 으로 대체.  
             data() { return { message: ... } }를 import { ref } from 'vue';와 const message = ref("Vue!"); 로 대체.  
-실행 화면 :
+실행 화면 : "Hello, Vue!" 문자열이 나타난다.
               
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e9290590-2ced-4710-8b18-8af80046fcaa" />  
 
@@ -33,5 +33,13 @@ components: { ChildComponent }를 제거.(script setup 사용)
 props: ['message']를 const props = defineProps({ message: String })로 대체.  
 @click="$emit('custom-event', ...)를  const emit = defineEmits(['custom-event']) 후 @click="emit('custom-event', ...)로 대체.  
 실행 화면 :  Hello from parent를 누르면 "Hello from parent" 문자열을 부모에게 보내고, 콘솔에 문자열이 출력됩니다.
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/cd4c3d6e-a13b-4ca1-8f73-df888ab1df0e" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/cd4c3d6e-a13b-4ca1-8f73-df888ab1df0e" />  
+
+< E06 >  
+변경 요약 :  inject: ['sharedMessage']를 import { inject } from 'vue'; 와 const sharedMessage = inject('sharedMessage');로 대체.  
+provide() { return { sharedMessage: ... } }를 import { provide, ref } 및 provide('sharedMessage', ref(...))로 대체.  
+components: { ChildComponent1 }를 제거.(script setup 사용)  
+실행 화면 :  child1 아래에 빨간색의 Hello from providea 문자열이 나타나고, child2 아래에 검은색의 Hello from provide 문자열이 나타난다.
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96a717ff-834c-4aaa-a6f5-a864aabad7d2" />
+
 
