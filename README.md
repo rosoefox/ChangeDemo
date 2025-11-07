@@ -54,7 +54,7 @@ created, mounted, updated.. 등을 on이 붙은 함수로 대체.
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/36d74c95-b347-4218-a342-8d8ac16f269f" />  
 
 < E08 >  
-변경 요약 : vue3 스타일이지만, E07과 E09 사이의 문법이다. E09에서 E08과의 차이점을 설명하겠다.  
+변경 요약 : vue3 스타일이지만, E07과 E09 조금 다른 문법이다. E09에서 E08과의 차이점을 설명하겠다.  
 실행 화면 : E07과 동일하다.  
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4889f461-30c0-4a98-9924-b12f47a3a39b" />  
 
@@ -69,4 +69,11 @@ export default { name: '...', setup() { ... } }를 defineOptions({ name: '...' }
 변경 요약 : export default { setup() { return { ... } } }를 <script setup>로 대체.    
 name: 'E10Ref'를 defineOptions({ name: 'E10Ref' })로 대체.  
 실행 화면 : Increment 버튼을 누르면 count가 1씩 증가한다.  
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/23a23d4e-273d-4aff-9524-b324e347ed49" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/23a23d4e-273d-4aff-9524-b324e347ed49" />  
+
+< E11 >  
+변경 요약 : vue3 스타일이지만 조금 더 변경해 보았다.  
+export default { setup() { return { ... } } }를 <script setup>로 대체.  
+name: 'E11Reactive'를 defineOptions({ name: 'E11Reactive' })로 대체.  
+실행 화면 : 이름과 나이가 화면에 나타나며, Increment Age 버튼을 누르면 나이가 30부터 1씩 증가한다. 
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/381b1332-b1a3-4867-9654-e994e32719b5" />
