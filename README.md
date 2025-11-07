@@ -76,4 +76,11 @@ name: 'E10Ref'를 defineOptions({ name: 'E10Ref' })로 대체.
 export default { setup() { return { ... } } }를 <script setup>로 대체.  
 name: 'E11Reactive'를 defineOptions({ name: 'E11Reactive' })로 대체.  
 실행 화면 : 이름과 나이가 화면에 나타나며, Increment Age 버튼을 누르면 나이가 30부터 1씩 증가한다. 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/381b1332-b1a3-4867-9654-e994e32719b5" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/381b1332-b1a3-4867-9654-e994e32719b5" />  
+
+< E12 >  
+변경 요약 :  export default { setup() { return { ... } } }를 <script setup>로 대체.  
+name: 'E12RefComponent'를 defineOptions({ name: 'E12RefComponent' })로 대체.  
+실행 화면 :  Focus Input 버튼을 누르면 입력하는 곳이 깜빡인다.
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/ec9df07a-71e5-413f-8b0b-0137f7bc520a" />
+
