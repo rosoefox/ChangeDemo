@@ -65,3 +65,8 @@ export default { name: '...', setup() { ... } }를 defineOptions({ name: '...' }
 실행 화면 : E07, E08과 동일하다.  
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4df74de6-9a19-4129-ba0f-a517f9a4f69d" />
 
+< E10 >  
+변경 요약 : export default { setup() { return { ... } } }를 <script setup>로 대체.    
+name: 'E10Ref'를 defineOptions({ name: 'E10Ref' })로 대체.  
+실행 화면 : Increment 버튼을 누르면 count가 1씩 증가한다.  
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/23a23d4e-273d-4aff-9524-b324e347ed49" />
