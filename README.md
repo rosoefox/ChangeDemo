@@ -40,6 +40,17 @@ props: ['message']를 const props = defineProps({ message: String })로 대체.
 provide() { return { sharedMessage: ... } }를 import { provide, ref } 및 provide('sharedMessage', ref(...))로 대체.  
 components: { ChildComponent1 }를 제거.(script setup 사용)  
 실행 화면 :  child1 아래에 빨간색의 Hello from providea 문자열이 나타나고, child2 아래에 검은색의 Hello from provide 문자열이 나타난다.
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96a717ff-834c-4aaa-a6f5-a864aabad7d2" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/96a717ff-834c-4aaa-a6f5-a864aabad7d2" />  
+  
+< E07 >  
+변경 요약 : name: '...'	제거.  
+props: { ... }를 const props = defineProps({ ... })로 대체.  
+data() { return { ... } }를 const var = ref(값)로 대체.  
+computed: { fn() { ... } }를 const var = computed(() => { ... })로 대체.  
+methods: { fn() { ... } }를 const fn = () => { ... }로 대체.  
+watch: { ... }를 watch(변수, (new, old) => { ... })로 대체.  
+created, mounted, updated.. 등을 on이 붙은 함수로 대체.  
+실행 화면 :  이름과 성을 입력하고 Greet을 누르면 Greeting count가 올라가고, 3회부터는 아래의 문자열이 변경된다.
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/36d74c95-b347-4218-a342-8d8ac16f269f" />
 
 
