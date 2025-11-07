@@ -24,6 +24,14 @@ items: [...]를 const items = ref([...]);로 대체.
 count: 0를 const count = ref(0);로 대체.  
 실행 화면 :  Toggle Visibility 버튼을 누르면 위의 3 문장이 사라집니다. 다시 누르면 보여집니다.  
 Increment Count 버튼을 누르면 값이 1씩 증가합니다. if문에 따라 아래의 문장이 달라집니다.
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/f7778085-3547-404a-beba-555215449682" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/f7778085-3547-404a-beba-555215449682" />  
 
+< E05 >  
+변경 요약 :  data() { return { ... } }를 import { ref } 및 const name = ref(...)로 대체.  
+methods: { handleEvent() { ... } }를 const handleEvent = (payload) => { ... }로 대체.  
+components: { ChildComponent }를 제거.(script setup 사용)  
+props: ['message']를 const props = defineProps({ message: String })로 대체.  
+@click="$emit('custom-event', ...)를  const emit = defineEmits(['custom-event']) 후 @click="emit('custom-event', ...)로 대체.  
+실행 화면 :  Hello from parent를 누르면 "Hello from parent" 문자열을 부모에게 보내고, 콘솔에 문자열이 출력됩니다.
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/cd4c3d6e-a13b-4ca1-8f73-df888ab1df0e" />
 
