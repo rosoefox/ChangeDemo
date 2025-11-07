@@ -54,7 +54,14 @@ created, mounted, updated.. 등을 on이 붙은 함수로 대체.
 <img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/36d74c95-b347-4218-a342-8d8ac16f269f" />  
 
 < E08 >  
-변경 요약 : vue3 스타일이므로 변경하지 않았다.  
+변경 요약 : vue3 스타일이지만, E07과 E09 사이의 문법이다. E09에서 E08과의 차이점을 설명하겠다.  
 실행 화면 : E07과 동일하다.  
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4889f461-30c0-4a98-9924-b12f47a3a39b" />
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4889f461-30c0-4a98-9924-b12f47a3a39b" />  
+
+< E09 >  
+변경 요약 : vue3 스타일이지만, E08과 다른 점이 있다.  
+setup 옵션을 포함한 Options API 구조가 아닌 <script setup> 구조를 사용하였다.  
+export default { name: '...', setup() { ... } }를 defineOptions({ name: '...' })로 대체한 상태이다.  
+실행 화면 : E07, E08과 동일하다.  
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4df74de6-9a19-4129-ba0f-a517f9a4f69d" />
 
