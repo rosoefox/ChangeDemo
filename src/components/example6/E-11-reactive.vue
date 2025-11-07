@@ -6,25 +6,19 @@
   </div>
 </template>
 
-<script>
-import { reactive } from 'vue';
+<script setup>
+import { reactive, defineOptions } from 'vue';
 
-export default {
-  name: 'E11Reactive',
-  setup() {
-    const person = reactive({
-      name: 'John Doe',
-      age: 30
-    });
+defineOptions({
+  name: 'E11Reactive'
+});
 
-    const incrementAge = () => {
-      person.age++; // reactive는 바로 속성에 접근
-    };
+const person = reactive({
+  name: 'John Doe',
+  age: 30
+});
 
-    return {
-      person,
-      incrementAge
-    };
-  }
+const incrementAge = () => {
+  person.age++;
 };
 </script>
